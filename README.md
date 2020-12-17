@@ -1,1 +1,0 @@
-# bname-stats-graph

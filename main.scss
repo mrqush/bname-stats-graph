@@ -1,0 +1,116 @@
+.bname-stats-graph {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+    padding: 0 30px 15px 60px;
+    position: relative;
+    @media only screen and (max-width: 1024px) {
+        padding: 0 5px 15px 40px;
+    }
+    &__analysis {
+        background: #f8f8f8;
+        height: 280px;
+        position: relative;
+    }
+    &__chart {
+        display: table;
+        border-collapse: collapse;
+        width: 100%;
+        height: 100%;
+    }
+    &__canvas {
+        position: absolute;
+        top: 0;
+        left: 75px;
+        box-sizing: border-box;
+    }
+    &__row {
+        display: table-row;
+    }
+    &__block {
+        display: table-cell;
+        border: 1px solid #d5d7d8;
+        &_first {
+            width: 15px;
+            border-left: 0;
+            position: relative;
+        }
+        &_last {
+            width: 50px;
+            border-right: 0;
+            @media only screen and (max-width: 1024px) {
+                width: 10px;
+            }
+        }
+    }
+    &__block-top {
+        display: table-cell;
+        border: 1px solid #d5d7d8;
+        border-top: 0;
+        &_first {
+            width: 15px;
+            border-left: 0;
+            position: relative;
+        }
+        &_last {
+            width: 50px;
+            border-right: 0;
+            @media only screen and (max-width: 1024px) {
+                width: 10px;
+            }
+        }
+    }
+    &__block-bottom {
+        border-bottom: none;
+        height: 20px;
+        position: relative;
+        &_first {
+            width: 15px;
+            border-left: 0;
+        }
+        &_last {
+            width: 50px;
+            border-right: 0;
+            @media only screen and (max-width: 1024px) {
+                width: 10px;
+            }
+        }
+    }
+    &__value {
+        font-size: 12px;
+        display: block;
+        text-align: center;
+        width: 20px;
+        color: #999;
+        position: absolute;
+        left: -25px;
+        bottom: -8px;
+        white-space: nowrap;
+        &_bottom {
+            font-size: 12px;
+            display: block;
+            text-align: center;
+            width: 100%;
+            color: #999999;
+            position: absolute;
+            bottom: -8px;
+        }
+    }
+    &__range {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+    &__select {
+        border: 1px solid #cccccc;
+        border-top: 1px solid #9a9a9a;
+        height: 30px;
+        box-sizing: border-box;
+        padding-left: 10px;
+        vertical-align: middle;
+        color: #333333;
+        cursor: pointer;
+        font-size: 14px;
+    }
+}
